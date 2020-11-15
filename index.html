@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bolso Cheio</title>
+  <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+  <h1>Exemplo de formulário para o Show me the Leads</h1>
+  <form method="POST" action="https://smtl.gama.academy/leads/1ccc7f60-25e3-11eb-bf8d-0d63c80760d2">
+    <input name="name" type="text" pattern="^\D{2,}\s[\D\s]{2,}$" title="Digite seu nome completo" required />
+    <input name="email" type="email" title="Digite um email válido" required />
+    <input name="redirectTo" type="hidden" value="https://gama.academy" />
+    <input name="debugMode" type="hidden" value="true" />
+    <input type="submit" />
+  </form>
+</body>
+
+</html>
