@@ -8,6 +8,8 @@
 body {
   -webkit-font-smoothing: antialiased;
   font-family: 'Roboto', sans-serif;
+
+  height: 100vh;
 }
 
 button {
@@ -15,30 +17,56 @@ button {
 }
 
 
-header {
+.header {
   background: #233E84;
   height:  70px;
+
+  padding: 0px 2%;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+}
+
+header a {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 110%;
+  color: #FFF;
+
+  text-decoration: none;
+}
+
+header a:hover {
+  text-decoration: underline;
 }
 
 
 header img {
   width: 60px;
   height: 60px;
-  margin-left: 10%;
-  position: absolute;
-  z-index: 1;
+  /* margin-left: 10%; */
 }
 
 .section-div {
-  height: 90vh;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+  margin: 0;
+}
+
+.section-div img {
+  width: 772px;
+  height: 533px;
 }
 
 .section-div a {
-  margin-bottom: 40px;
+  /* margin-bottom: 40px; */
+  position: absolute;
+  top: 96vh;
   color: #666666;
 
   font-family: Roboto;
@@ -63,14 +91,15 @@ header img {
   border-radius: 8px;
 
   position: absolute;
-  top: 494px;
+  /* top: 54vh; */
+  top: 69vh;
 
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
 
-  z-index: 1;
+  z-index: -1;
 
 }
 
@@ -125,4 +154,18 @@ footer img {
   height: 57.59px;
   padding-top: 5%;
 }
+
+@media screen and (max-width: 1280px){
+  .section-div {
+    height: 105%;
+  }
+  .thanks {
+    top: 75vh;
+  }
+  .section-div a {
+    top: 108vh;
+    margin-bottom: 5%;
+  }
+}
+
 

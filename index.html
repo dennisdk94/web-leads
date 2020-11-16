@@ -67,7 +67,7 @@
     <div class="section2-title">
       <span>A pandemia chegou, as contas apertaram, os funcionários surtaram...</span>
       <h2>Calma empreendedor, você não está sozinho!</h2>
-      <span>Dicas de ferramentas para sua empresa não entrar no cheque especial:</span>
+      <span>Ferramentas para otimizar o funcionamento do seu negócio:</span>
     </div>
     <div class="section2-title1">
       <div class="section2-title2">
@@ -120,7 +120,9 @@
       <h1>Vamos lá</h1>
       <p>Digite abaixo seu nome completo e email para baixar grátis nosso e-book.</p>
 
-      <form method="POST" action="https://smtl.gama.academy/leads/1ccc7f60-25e3-11eb-bf8d-0d63c80760d2">
+      <form method="POST" action="https://smtl.gama.academy/leads/1ccc7f60-25e3-11eb-bf8d-0d63c80760d2"
+        onsubmit="document.getElementById('link').click(); getDataBtn(); return false;">
+        <a id="link" href="file/7_Dicas_para_melhorar_suas_financas.pdf" target="_blank" download hidden></a>
         <input name="name" type="text" pattern="^\D{2,}\s[\D\s]{2,}$" title="Digite seu nome completo"
           placeholder="NOME COMPLETO" required />
         <input name="email" type="email" title="Digite um email válido" placeholder="E-MAIL" required />
