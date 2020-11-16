@@ -10,7 +10,7 @@
     content="Melhore seu controle financeiro e compreenda os fluxos do seu negócio com o Bolso Cheio.">
   <title>Bolso Cheio</title>
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style/style.css">
   <link rel="stylesheet" href="style/reset.css">
   <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
@@ -45,9 +45,13 @@
   </noscript>
 </head>
 
-<body>
+<body onload="atualizaContador()">
   <header>
-    <img src="/assets/bolsoclaro.png" alt="Logo">
+    <div>
+      <img src="assets/bolsoretangulo.png" alt="Logo">
+      <h1><a href="#section4">Cadastre-se</a></h1>
+    </div>
+    
   </header>
 
   <section class="section1">
@@ -57,9 +61,10 @@
         da sua mão</h1>
       <p>Dicas e ferramentas para sua empresa não entrar no cheque especial.</p>
       <button><a href="#section4">BAIXE GRÁTIS NOSSO EBOOK</a></button>
+      <span id="contador"></span>
     </div>
     <div>
-      <img src="/assets/undraw_personal.png" alt="Undraw Personal">
+      <img class="resizeImg" src="assets/undraw_personal.png" alt="Undraw Personal">
     </div>
   </section>
 
@@ -71,25 +76,25 @@
     </div>
     <div class="section2-title1">
       <div class="section2-title2">
-        <img src="/assets/icon4.png" alt="Icone dinheiro">
+        <img src="assets/icon4.png" alt="Icone dinheiro">
         <span>Finanças na crise</span>
         <p>Entenda melhor as finanças do seu negócio e os possíveis obstáculos.</p>
         <a href="#section4">SAIBA MAIS</a>
       </div>
       <div class="section2-title2">
-        <img src="/assets/icon3.png" alt="Icone dinheiro">
+        <img src="assets/icon3.png" alt="Icone dinheiro">
         <span>Gestão de tempo</span>
         <p>Sabemos que emergências acontecem. Você já tem a sua reserva?</p>
         <a href="#section4">SAIBA MAIS</a>
       </div>
       <div class="section2-title2">
-        <img src="/assets/icon2.png" alt="Icone dinheiro">
+        <img src="assets/icon2.png" alt="Icone dinheiro">
         <span>Organizar custos</span>
         <p>Tenha uma planilha de planejamento com cada gasto de sua empresa.</p>
         <a href="#section4">SAIBA MAIS</a>
       </div>
       <div class="section2-title2">
-        <img src="/assets/icon1.png" alt="Icone dinheiro">
+        <img src="assets/icon1.png" alt="Icone dinheiro">
         <span>Pagamentos de contas</span>
         <p>Entenda como fazer pagamentos de contas de maneira mais simplicada..</p>
         <a href="#section4">SAIBA MAIS</a>
@@ -99,7 +104,7 @@
 
   <section class="section3">
     <div>
-      <img src="/assets/undraw_Saving.png" alt="Undraw Saving">
+      <img class="resizeImg" src="assets/undraw_Saving.png" alt="Undraw Saving">
     </div>
     <div>
       <h2>Não desista do seu negócio!</h2>
@@ -124,8 +129,8 @@
         onsubmit="document.getElementById('link').click(); getDataBtn(); return false;">
         <a id="link" href="file/7_Dicas_para_melhorar_suas_financas.pdf" target="_blank" download hidden></a>
         <input name="name" type="text" pattern="^\D{2,}\s[\D\s]{2,}$" title="Digite seu nome completo"
-          placeholder="NOME COMPLETO" required />
-        <input name="email" type="email" title="Digite um email válido" placeholder="E-MAIL" required />
+          placeholder="Nome completo" required />
+        <input name="email" type="email" title="Digite um email válido" placeholder="E-mail" required />
         <input name="redirectTo" type="hidden" value="https://bolsocheio.netlify.app/thanks.html" />
 
         <input type="submit" value="FAÇA O DOWNLOAD GRÁTIS AGORA" />
@@ -133,25 +138,63 @@
 
     </div>
     <div>
-      <img src="/assets/undraw_Email.png" alt="Undraw Email">
+      <img class="resizeImg" src="assets/undraw_Email.png" alt="Undraw Email">
     </div>
   </section>
 
   <footer>
     <ul>
-      <li><a href="https://bolsocheio.netlify.app/"><img class="footer-logo" src="assets/logo2.png" alt="Logo"
-            title="Logo"></a></li>
-      <li><a href="https://www.facebook.com/Bolso-Cheio-115254123728156" target="_blank"><img src="assets/facebook.png"
-            alt="Facebook" title="Facebook"></a></li>
-      <li><a href="https://www.instagram.com/bolsocheio.gestaofinanceira/" target="_blank"><img
-            src="assets/instagram.png" alt="Instagram" title="Instagram"></a></li>
-      <li><a href="https://www.linkedin.com/company/bolso-cheio/?viewAsMember=true" target="_blank"><img
-            src="assets/linkedin.png" alt="Linkedin" title="LinkedIn"></a></li>
-      <li><a href="https://br.pinterest.com/settings/edit-profile" target="_blank"><img src="assets/pinterest.png"
-            alt="Pinterest" title="Pinterest"></a>
-      </li>
+      <div>
+        <li><a href="https://bolsocheio.netlify.app/"><img class="footer-logo" src="assets/bolsoretangulo.png" alt="Logo"
+          title="Logo"></a></li>
+      </div>
+      <div>
+        <li><a href="https://www.facebook.com/Bolso-Cheio-115254123728156" target="_blank"><img src="assets/facebook.png"
+          alt="Facebook" title="Facebook"></a></li>
+        <li><a href="https://www.instagram.com/bolsocheio.gestaofinanceira/" target="_blank"><img
+              src="assets/instagram.png" alt="Instagram" title="Instagram"></a></li>
+        <li><a href="https://www.linkedin.com/company/bolso-cheio/?viewAsMember=true" target="_blank"><img
+              src="assets/linkedin.png" alt="Linkedin" title="LinkedIn"></a></li>
+        <li><a href="https://br.pinterest.com/settings/edit-profile" target="_blank"><img src="assets/pinterest.png"
+              alt="Pinterest" title="Pinterest"></a>
+        </li>
+      </div>
     </ul>
   </footer>
 </body>
+<script type="text/javascript">
+  var YY = 2020;
+  var MM = 11;
+  var DD = 19;
+  var HH = 23;
+  var MI = 59;
+  var SS = 59;
 
+  window.onload(atualizaContador());
+
+  function atualizaContador() {
+    var hoje = new Date();
+    var futuro = new Date(YY, MM - 1, DD, HH, MI, SS);
+    var ss = parseInt((futuro - hoje) / 1000);
+    var mm = parseInt(ss / 60); var hh = parseInt(mm / 60);
+    var dd = parseInt(hh / 24);
+    ss = ss - (mm * 60);
+    mm = mm - (hh * 60);
+    hh = hh - (dd * 24);
+    var faltam = '';
+    faltam += (dd && dd > 1) ? dd + ' dias, ' : (dd == 1 ? '1 dia, ' : '');
+    faltam += (toString(hh).length) ? hh + ' hr, ' : '';
+    faltam += (toString(mm).length) ? mm + ' min e ' : '';
+    faltam += ss + ' seg';
+
+    if (dd + hh + mm + ss > 0) {
+      document.getElementById('contador').innerHTML = faltam;
+      setTimeout(atualizaContador, 1000);
+    }
+    else {
+      document.getElementById('contador').innerHTML = 'CHEGOU!!!!';
+      setTimeout(atualizaContador, 1000);
+    }
+  } 
+</script>
 </html>
