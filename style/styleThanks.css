@@ -36,6 +36,10 @@ header img {
   justify-content: space-around;
 }
 
+.section-div a {
+  margin-bottom: 40px;
+}
+
 .thanks {
   width: 502px;
   height: 211px;
