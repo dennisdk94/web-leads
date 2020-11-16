@@ -353,3 +353,29 @@ footer img {
   height: 57.59px;
   padding-top: 5%;
 }
+
+@media screen and (max-width: 768px){
+
+  header {
+    height: 200px;
+  }
+
+  header img {
+    width: 150px;
+    height: 150px;
+    margin-top: 20px;
+    margin-left: 40% ;
+  }
+
+  .section1, .section2, .section3, .section4 {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+  }
+
+  section.section4 {
+    padding: 0;
+    width: auto;
+  }
+}
