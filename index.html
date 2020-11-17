@@ -148,7 +148,8 @@
       <h1>Vamos lá</h1>
       <p>Digite abaixo seu nome completo e email para baixar grátis nosso e-book.</p>
 
-      <form method="POST" action="https://smtl.gama.academy/leads/1ccc7f60-25e3-11eb-bf8d-0d63c80760d2"
+      <form autocomplete="off" method="POST"
+        action="https://smtl.gama.academy/leads/1ccc7f60-25e3-11eb-bf8d-0d63c80760d2"
         onsubmit="document.getElementById('link').click(); getDataBtn(); return false;">
         <a id="link" href="file/7_Dicas_para_melhorar_suas_financas.pdf" target="_blank" download hidden></a>
         <input name="name" type="text" pattern="^\D{2,}\s[\D\s]{2,}$" title="Digite seu nome completo"
@@ -165,6 +166,47 @@
     </div>
   </section>
 
+  <div class="lightbox" id="text">
+
+    <div class="box">
+      <!-- your title -->
+      <div class="content">
+        <div>
+          <p>Já vai?</p>
+          <p>Espera ai?</p>
+        </div>
+        <div>
+          <img src="assets/undraw_gift2.png" alt="Undraw Gift">
+        </div>
+      </div>
+      <div class="form-content">
+        <a class="close" href="#">X</a>
+        <div class="form-content2">
+          <div>
+            <p>Baixe agora nosso</p>
+            <p><b>E-BOOK GRÁTIS</b></p>
+            <p>com dicas de</p>
+            <p><b>GESTÃO FINANCEIRA</b></p>
+          </div>
+          <div class="forms2">
+            <form autocomplete="off" method="POST"
+              action="https://smtl.gama.academy/leads/1ccc7f60-25e3-11eb-bf8d-0d63c80760d2"
+              onsubmit="document.getElementById('link').click(); getDataBtn(); return false;">
+              <a id="link" href="file/7_Dicas_para_melhorar_suas_financas.pdf" target="_blank" download hidden></a>
+              <input name="name" type="text" pattern="^\D{2,}\s[\D\s]{2,}$" title="Digite seu nome completo"
+                placeholder="Nome completo" required />
+              <input name="email" type="email" title="Digite um email válido" placeholder="E-mail" required />
+              <input name="redirectTo" type="hidden" value="https://bolsocheio.netlify.app/thanks.html" />
+
+              <input type="submit" value="FAÇA O DOWNLOAD GRÁTIS AGORA" />
+            </form>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <footer>
     <ul>
       <div>
@@ -178,13 +220,14 @@
               src="assets/instagram.png" alt="Instagram" title="Instagram"></a></li>
         <li><a href="https://www.linkedin.com/company/bolso-cheio/?viewAsMember=true" target="_blank"><img
               src="assets/linkedin.png" alt="Linkedin" title="LinkedIn"></a></li>
-        <li><a href="https://br.pinterest.com/settings/edit-profile" target="_blank"><img src="assets/pinterest.png"
-              alt="Pinterest" title="Pinterest"></a>
+        <li><a href="https://pin.it/6YOLD6z" target="_blank"><img src="assets/pinterest.png" alt="Pinterest"
+              title="Pinterest"></a>
         </li>
       </div>
     </ul>
   </footer>
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script type="text/javascript">
   var YY = 2020;
   var MM = 11;
@@ -218,7 +261,32 @@
       document.getElementById('contador').innerHTML = 'CHEGOU!!!!';
       setTimeout(atualizaContador, 1000);
     }
-  } 
+  }
+
+  // Exit intent
+  function addEvent(obj, evt, fn) {
+    if (obj.addEventListener) {
+      obj.addEventListener(evt, fn, false);
+    }
+    else if (obj.attachEvent) {
+      obj.attachEvent("on" + evt, fn);
+    }
+  }
+
+  // Exit intent trigger
+  addEvent(document, 'mouseout', function (evt) {
+
+    if (evt.toElement == null && evt.relatedTarget == null) {
+      $('.lightbox').slideDown();
+    };
+
+  });
+
+  // Closing the Popup Box
+  $('a.close').click(function (evt) {
+    evt.preventDefault();
+    $('.lightbox').slideUp();
+  });
 </script>
 
 </html>
