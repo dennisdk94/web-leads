@@ -118,7 +118,7 @@ section.section1 h3 {
 }
 
 section.section1 span#contador {
-  padding-left:10%;
+  padding-left:14%;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: normal;
@@ -429,6 +429,12 @@ footer img {
 
   section.section1 h3 {
     margin-top: -30px;
+    text-align: center;
+    padding: 3% 0 2% 0;
+  }
+
+ section.section1 span#contador  {
+    padding-left: 15%;
   }
 
 
@@ -442,6 +448,10 @@ footer img {
     padding: 0;
 
     margin: 0 auto ;
+  }
+
+  section.section2 {
+    margin-top: 18px;
   }
 
   .section2-title {
@@ -621,12 +631,21 @@ footer img {
     display: flex;
     flex-direction: column-reverse;
     /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
 
     padding-top: 20px;
+    padding-left: 30px;
   }
 
   footer img {
     width: 20px;
     height: 20px;
   }
+}
+
+@media screen and (max-width: 414px){
+  section.section1 span#contador {
+    padding-left: 21%;
+}
 }
