@@ -105,6 +105,28 @@ section.section1 button:hover {
   background: #f2c807;
 }
 
+section.section1 h3 {
+  padding-top:3%;
+  padding-bottom: 3%;
+  padding-left:10%;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 110%;
+  color: #666666;
+}
+
+section.section1 span#contador {
+  padding-left:10%;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 110%;
+  color: #666666;color: #666666;
+}
+
 section.section2 {
   padding: 0 10%;
 }
@@ -405,6 +427,11 @@ footer img {
     font-size: 16px;
   }
 
+  section.section1 h3 {
+    margin-top: -30px;
+  }
+
+
   .section1, .section2, .section3 {
 
     width: 90%;
@@ -415,6 +442,10 @@ footer img {
     padding: 0;
 
     margin: 0 auto ;
+  }
+
+  .section2-title {
+    padding-top: 15px;
   }
 
   .section2-title span {
