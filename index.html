@@ -8,14 +8,16 @@
   <meta name="keywords" content="empreendedor,empreendedorismo digital, empreendedor sebrae, fluxo de caixa como fazer">
   <meta name="description"
     content="Melhore seu controle financeiro e compreenda os fluxos do seu negócio com o Bolso Cheio.">
-  <title>Bolso Cheio</title>
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style/style.css">
-  <link rel="stylesheet" href="style/reset.css">
-  <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
-  <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
+  <title>Bolso Cheio</title>
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,500;1,400;1,500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/reset.css">
+  <link rel="stylesheet" href="animation/animation.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-2R6N6Z4DLS"></script>
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-2R6N6Z4DLS"></script>
   <script>
@@ -71,105 +73,59 @@
   <!-- End Facebook Pixel Code -->
 </head>
 
-<body onload="atualizaContador()">
-  <header>
+<body>
+  <div class="background-image"></div>
+
+  <header class="header">
+    <div><img src="assets/logo.svg" alt=""></div>
     <div>
-      <img src="assets/bolsoretangulo.png" alt="Logo">
-      <h1><a href="#section4">Cadastre-se</a></h1>
+      <h1>ÚLTIMOS DIAS PARA BAIXAR SEU E-BOOK GRÁTIS</h1>
     </div>
-
-  </header>
-
-  <section class="section1">
     <div>
-      <h1>Tenha controle financeiro
-        do seu negócio na palma
-        da sua mão</h1>
-      <p>Dicas e ferramentas para sua empresa não entrar no cheque especial.</p>
-      <button><a href="#section4">BAIXE GRÁTIS NOSSO EBOOK</a></button>
-      <br>
-      <h3>NÃO PERCA OS ÚLTIMOS DIAS</h3>
       <span id="contador"></span>
     </div>
-    <div>
-      <img class="resizeImg" src="assets/undraw_personal.png" alt="Undraw Personal">
-    </div>
-  </section>
+  </header>
 
-  <section class="section2">
-    <div class="section2-title">
-      <span>A pandemia chegou, as contas apertaram, os funcionários surtaram...</span>
-      <h2>Calma empreendedor, você não está sozinho!</h2>
-      <span>Ferramentas para otimizar o funcionamento do seu negócio:</span>
-    </div>
-    <div class="section2-title1">
-      <div class="section2-title2">
-        <img src="assets/icon4.png" alt="Icone dinheiro">
-        <span>Finanças na crise</span>
-        <p>Entenda melhor as finanças do seu negócio e os possíveis obstáculos.</p>
-        <a href="#section4">SAIBA MAIS</a>
+  <div class="center">
+    <section class="section">
+      <div class="info">
+        <h1>Tenha controle financeiro do seu negócio na palma da sua mão.</h1>
+        <h2>Baixe nosso e-book grátis.</h2>
+        <!-- <h3>Mais de 2.800 downloads nas ultimas 48h</h3> -->
+        <!-- <img src="assets/livro.png" alt="Undraw Email"> -->
+        <ul>
+          <li class="slide-in-blurred-left">Como organizar custos?</li>
+          <li class="slide-in-blurred-left1">Como administrar as finanças e investir no negócio ao mesmo tempo?</li>
+          <li class="slide-in-blurred-left2">Como superar a crise?</li>
+        </ul>
       </div>
-      <div class="section2-title2">
-        <img src="assets/icon3.png" alt="Icone dinheiro">
-        <span>Gestão de tempo</span>
-        <p>Sabemos que emergências acontecem. Você já tem a sua reserva?</p>
-        <a href="#section4">SAIBA MAIS</a>
+      <div class="negativoForm">
+        <img src="assets/top.png" alt="">
+        <div class="form">
+          <h1>Vamos lá</h1>
+          <p class="padtwo">Digite abaixo seu nome completo e email para <b>baixar grátis</b> nosso e-book.</p>
+          <form autocomplete="off" method="POST"
+            action="https://smtl.gama.academy/leads/1ccc7f60-25e3-11eb-bf8d-0d63c80760d2"
+            onsubmit="document.getElementById('link').click(); getDataBtn(); return false;">
+            <a id="link" href="file/7_Dicas_para_melhorar_suas_financas.pdf" target="_blank" download hidden></a>
+            <div>
+              <p><b class="asterisk">*</b>Nome completo:</p>
+            </div>
+            <input name="name" type="text" pattern="^\D{2,}\s[\D\s]{2,}$" title="Digite seu nome completo"
+              placeholder="Nome completo" required />
+            <div>
+              <p><b class="asterisk">*</b>E-mail:</p>
+            </div>
+            <input name="email" type="email" title="Digite um email válido" placeholder="E-mail" required />
+            <input name="redirectTo" type="hidden" value="https://bolsocheio.blog.br/thanks.html" />
+            <input type="submit" value="Pegue seu e-book" />
+          </form>
+          <h6>Mais de <b id="download">328</b> downloads nas ultimas 48h</h6>
+        </div>
       </div>
-      <div class="section2-title2">
-        <img src="assets/icon2.png" alt="Icone dinheiro">
-        <span>Organizar custos</span>
-        <p>Tenha uma planilha de planejamento com cada gasto de sua empresa.</p>
-        <a href="#section4">SAIBA MAIS</a>
-      </div>
-      <div class="section2-title2">
-        <img src="assets/icon1.png" alt="Icone dinheiro">
-        <span>Pagamentos de contas</span>
-        <p>Entenda como fazer pagamentos de contas de maneira mais simplicada..</p>
-        <a href="#section4">SAIBA MAIS</a>
-      </div>
-    </div>
-  </section>
 
-  <section class="section3">
-    <div>
-      <img class="resizeImg" src="assets/undraw_Saving.png" alt="Undraw Saving">
-    </div>
-    <div>
-      <h2>Não desista do seu negócio!</h2>
-      <h2>Comece agora a jornada de transformação financeira da sua empresa</h2>
-      <p class="section3-first-paragraph">Já estivemos no seu lugar e podemos afirmar com toda certeza: HÁ SOLUÇÃO e o
-        DINHEIRO vai voltar ao seu caixa.
-      </p>
-      <p class="section3-second-paragraph">“Pesquisa do SEBRAE mostra que 31% das empresas mudaram o funcionamento e
-        precisaram se adaptar para manter a
-        saúde
-        financeira.”</p>
-      <button><a href="#section4">TRANSFORME SUA VIDA FINANCEIRA</a></button>
-    </div>
-  </section>
-
-  <section id="section4" class="section4">
-    <div class="forms">
-      <h1>Vamos lá</h1>
-      <p>Digite abaixo seu nome completo e email para baixar grátis nosso e-book.</p>
-
-      <form autocomplete="off" method="POST"
-        action="https://smtl.gama.academy/leads/1ccc7f60-25e3-11eb-bf8d-0d63c80760d2"
-        onsubmit="document.getElementById('link').click(); getDataBtn(); return false;">
-        <a id="link" href="file/7_Dicas_para_melhorar_suas_financas.pdf" target="_blank" download hidden></a>
-        <input name="name" type="text" pattern="^\D{2,}\s[\D\s]{2,}$" title="Digite seu nome completo"
-          placeholder="Nome completo" required />
-        <input name="email" type="email" title="Digite um email válido" placeholder="E-mail" required />
-        <input name="redirectTo" type="hidden" value="https://bolsocheio.netlify.app/thanks.html" />
-
-        <input type="submit" value="FAÇA O DOWNLOAD GRÁTIS AGORA" />
-      </form>
-
-    </div>
-    <div>
-      <img class="resizeImg" src="assets/undraw_Email.png" alt="Undraw Email">
-    </div>
-  </section>
+    </section>
+  </div>
 
   <div class="lightbox" id="text">
 
@@ -201,9 +157,8 @@
               <input name="name" type="text" pattern="^\D{2,}\s[\D\s]{2,}$" title="Digite seu nome completo"
                 placeholder="Nome completo" required />
               <input name="email" type="email" title="Digite um email válido" placeholder="E-mail" required />
-              <input name="redirectTo" type="hidden" value="https://bolsocheio.netlify.app/thanks.html" />
-
-              <input type="submit" value="FAÇA O DOWNLOAD GRÁTIS AGORA" />
+              <input name="redirectTo" type="hidden" value="https://bolsocheio.blog.br/thanks.html" />
+              <input type="submit" value="BAIXE GRÁTIS AGORA" />
             </form>
 
           </div>
@@ -213,26 +168,30 @@
   </div>
 
   <footer>
-    <ul>
-      <div>
-        <li><a href="https://bolsocheio.netlify.app/"><img class="footer-logo" src="assets/bolsoretangulo.png"
-              alt="Logo" title="Logo"></a></li>
-      </div>
-      <div>
-        <li><a href="https://www.facebook.com/Bolso-Cheio-115254123728156" target="_blank"><img
-              src="assets/facebook.png" alt="Facebook" title="Facebook"></a></li>
-        <li><a href="https://www.instagram.com/bolsocheio.gestaofinanceira/" target="_blank"><img
-              src="assets/instagram.png" alt="Instagram" title="Instagram"></a></li>
-        <li><a href="https://www.linkedin.com/company/bolso-cheio/?viewAsMember=true" target="_blank"><img
-              src="assets/linkedin.png" alt="Linkedin" title="LinkedIn"></a></li>
-        <li><a href="https://pin.it/6YOLD6z" target="_blank"><img src="assets/pinterest.png" alt="Pinterest"
-              title="Pinterest"></a>
-        </li>
-      </div>
-    </ul>
+
   </footer>
+
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript">
+  var download = 328;
+
+  window.onload(atualizaDownload());
+
+  function atualizaDownload() {
+
+    if (download % 2 == 0) {
+      download = download + 3;
+    }
+    else {
+      download = download + 1;
+    }
+
+    document.getElementById('download').innerHTML = download;
+    setTimeout(atualizaDownload, 10000);
+
+  } 
+</script>
 <script type="text/javascript">
   var YY = 2020;
   var MM = 11;
@@ -267,7 +226,8 @@
       setTimeout(atualizaContador, 1000);
     }
   }
-
+</script>
+<script>
   // Exit intent
   function addEvent(obj, evt, fn) {
     if (obj.addEventListener) {
@@ -291,6 +251,7 @@
   $('a.close').click(function (evt) {
     evt.preventDefault();
     $('.lightbox').slideUp();
+    console.log('teste')
   });
 </script>
 
