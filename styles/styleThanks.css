@@ -166,4 +166,74 @@ footer img {
   }
 }
 
+@media screen and (max-width: 411px){
+  .header {
+    height: 113px;
+    width: 157%;
+  }
+
+  .header img {
+    width: 207px;
+  }
+
+  .header a {
+    font-size: 30px;
+  }
+
+  .section-div {
+    height: 60%;
+  }
+
+  .section-div img {
+    width: 588px;
+    margin-left: 218px;
+  }
+
+  .thanks {
+    top: 61vh;
+    left:8vh;
+  }
+
+  .section-div a {
+    top: 93vh;
+    margin-bottom: 5%;
+    left: 10vh;
+    text-align: center;
+    font-size: 18px;
+    margin-left: 141px
+  }
+}
+
+@media screen and (max-width: 411px){
+  .section-div {
+    height: 81%;
+  }
+
+  .thanks {
+    top: 79vh;
+    left: 8vh;
+  }
+
+  .section-div a {
+    top: 118vh;
+   
+  }
+}
+
+@media screen and (max-width: 411px){
+  .header {
+    height: 113px;
+    width: 176%;
+  }
+
+  .thanks {
+    top: 84vh;
+    left: 8vh;
+  }
+
+  .section-div a {
+    top: 125vh;
+  }
+}
+
 
