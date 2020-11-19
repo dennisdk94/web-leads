@@ -9,21 +9,20 @@
   <meta name="description" content="">
   <title>Bolso Cheio - Obrigado!</title>
   <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
-  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,500;1,400;1,500&display=swap"
-    rel="stylesheet">
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="styles/styleThanks.css">
   <link rel="stylesheet" href="styles/reset.css">
 
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-2R6N6Z4DLS"></script>
   <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-2R6N6Z4DLS"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-183048817-1">
+  </script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
 
-    gtag('config', 'G-2R6N6Z4DLS');
+    gtag('config', 'UA-183048817-1');
   </script>
 
   <script>
@@ -59,41 +58,30 @@
 </head>
 
 <body>
-
-  <body>
-    <div class="background-image"></div>
-    <a id="link" href="file/Controle_Financeiro_Iniciantes_Bolso_Cheio.xlsx" target="_blank" download hidden></a>
-    <header>
-    </header>
-
-    <div class="center">
-      <section class="section">
-        <div class="negativoForm">
-          <img src="assets/calc.png" alt="">
-          <div class="form">
-            <h1>Obrigado!</h1>
-            <p class="padtwo">Parabéns, você e sua empresa iniciam agora uma nova jornada rumo ao sucesso financeiro!
-            </p>
-            <a class="removelink" href="/file/7_Dicas_para_melhorar_suas_financas.pdf" download="book">
-              <h6>Clique aqui caso seu download não tenha iniciado</h6>
-            </a>
-          </div>
-        </div>
-
-      </section>
+  <header class=header>
+    <img src="assets/logo.svg" alt="Logo">
+    <a href="index.html">Voltar ao início</a>
+  </header>
+  <div class="section-div">
+    <img src="assets/undraw_happy2.png" alt="Happy">
+    <div class="thanks">
+      <h1>OBRIGADO!</h1>
+      <p>Parabéns, você e sua empresa iniciam agora uma nova jornada rumo ao sucesso financeiro!</p>
     </div>
+    <a href="/file/7_Dicas_para_melhorar_suas_financas.pdf" download="book">
+      CLIQUE AQUI CASO SEU DOWNLOAD NÃO TENHA INICIADO
+    </a>
+    <a id="link" href="file/Controle_Financeiro_Iniciantes_Bolso_Cheio.xlsx" target="_blank" download hidden></a>
+  </div>
+</body>
 
-    <footer>
-    </footer>
+<script type="text/javascript">
 
-  </body>
-  <script type="text/javascript">
+  window.onload(atualizaDownload());
 
-    window.onload(atualizaDownload());
-
-    function atualizaDownload() {
-      var baixar = document.getElementById('link').click();
-    } 
-  </script>
+  function atualizaDownload() {
+    var baixar = document.getElementById('link').click();
+  } 
+</script>
 
 </html>

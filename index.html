@@ -105,7 +105,7 @@
   <header class="header">
     <div><img src="assets/logo.svg" alt=""></div>
     <div>
-      <h1>ÚLTIMOS DIAS PARA BAIXAR SEU E-BOOK GRÁTIS</h1>
+      <h1>ÚLTIMOS DIAS PARA BAIXAR SEU E-BOOK E PLANILHA GRÁTIS</h1>
     </div>
     <div>
       <span id="contador"></span>
@@ -116,7 +116,7 @@
     <section class="section">
       <div class="info">
         <h1>Tenha controle financeiro do seu negócio na palma da sua mão.</h1>
-        <h2>Baixe nosso e-book grátis.</h2>
+        <h2>Baixe nosso e-book e planilha grátis.</h2>
         <!-- <h3>Mais de 2.800 downloads nas ultimas 48h</h3> -->
         <!-- <img src="assets/livro.png" alt="Undraw Email"> -->
         <ul>
@@ -129,10 +129,11 @@
         <img src="assets/top.png" alt="">
         <div class="form">
           <h1>Vamos lá</h1>
-          <p class="padtwo">Digite abaixo seu nome completo e email para <b>baixar grátis</b> nosso EBOOK.</p>
+          <p class="padtwo">Digite abaixo seu nome completo e email para <b>baixar grátis</b> nosso EBOOK e PLANILHA.
+          </p>
           <form autocomplete="off" method="POST"
             action="https://smtl.gama.academy/leads/1ccc7f60-25e3-11eb-bf8d-0d63c80760d2"
-            onsubmit="document.getElementById('link').click(); getDataBtn(); return false;">
+            onsubmit="document.getElementById('link').click();document.getElementById('link2').click(); getDataBtn(); return false;">
             <a id="link" href="file/7_Dicas_para_melhorar_suas_financas.pdf" target="_blank" download hidden></a>
             <div>
               <p><b class="asterisk">*</b>Nome completo:</p>
@@ -144,7 +145,7 @@
             </div>
             <input name="email" type="email" title="Digite um email válido" placeholder="E-mail" required />
             <input name="redirectTo" type="hidden" value="https://bolsocheio.blog.br/thanks.html" />
-            <input type="submit" value="Pegue seu e-book" />
+            <input type="submit" value="Pegue seu e-book e planilha" />
           </form>
           <h6>Mais de <b id="download">328</b> downloads nas ultimas 48h</h6>
         </div>
@@ -171,7 +172,7 @@
         <div class="form-content2">
           <div>
             <p>Baixe agora nosso</p>
-            <p><b>eBOOK GRÁTIS</b></p>
+            <p><b>eBOOK e planilha GRÁTIS</b></p>
             <p>com dicas de</p>
             <p><b>GESTÃO FINANCEIRA</b></p>
           </div>
@@ -277,7 +278,6 @@
   $('a.close').click(function (evt) {
     evt.preventDefault();
     $('.lightbox').slideUp();
-    console.log('teste')
   });
 </script>
 
