@@ -498,6 +498,16 @@ background: #f2c807;
 
 /* Fim Modal */
 
+@media screen and (max-width: 1280px){
+  .header h1 {
+    font-size: 20px;
+  }
+
+  .header span {
+    font-size: 25px;
+  }
+}
+
 
 
 @media screen and (max-width: 768px){
