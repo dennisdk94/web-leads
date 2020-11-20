@@ -1,284 +1,223 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Bolso Cheio" />
+    <meta name="keywords" content="empreendedor,empreendedorismo digital, empreendedor sebrae, fluxo de caixa como fazer" />
+    <meta name="description" content="Melhore seu controle financeiro e compreenda os fluxos do seu negócio com o Bolso Cheio." />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="author" content="Bolso Cheio">
-  <meta name="keywords" content="empreendedor,empreendedorismo digital, empreendedor sebrae, fluxo de caixa como fazer">
-  <meta name="description"
-    content="Melhore seu controle financeiro e compreenda os fluxos do seu negócio com o Bolso Cheio.">
+    <title>Bolso Cheio</title>
 
-  <title>Bolso Cheio</title>
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
 
-  <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
-  <link rel="icon" href="/favicon.ico" type="image/x-icon">
-
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,500;1,400;1,500&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="styles/style.css">
-  <link rel="stylesheet" href="styles/reset.css">
-  <link rel="stylesheet" href="animation/animation.css">
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-2R6N6Z4DLS"></script>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-183048817-1">
-  </script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    gtag('config', 'UA-183048817-1');
-  </script>
-
-  <!-- hotjar -->
-  <script>
-    (function (h, o, t, j, a, r) {
-      h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
-      h._hjSettings = { hjid: 2102659, hjsv: 6 };
-      a = o.getElementsByTagName('head')[0];
-      r = o.createElement('script'); r.async = 1;
-      r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
-      a.appendChild(r);
-    })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
-  </script>
-
-  <!-- hotjar -->
-  <script>
-    (function (h, o, t, j, a, r) {
-      h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
-      h._hjSettings = { hjid: 2102659, hjsv: 6 };
-      a = o.getElementsByTagName('head')[0];
-      r = o.createElement('script'); r.async = 1;
-      r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
-      a.appendChild(r);
-    })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
-  </script>
-  <script src="https://www.googleoptimize.com/optimize.js?id=OPT-TJPL4DL"></script>
-  <!-- Facebook Pixel Code -->
-  <script>
-    !function (f, b, e, v, n, t, s) {
-      if (f.fbq) return; n = f.fbq = function () {
-        n.callMethod ?
-          n.callMethod.apply(n, arguments) : n.queue.push(arguments)
-      };
-      if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
-      n.queue = []; t = b.createElement(e); t.async = !0;
-      t.src = v; s = b.getElementsByTagName(e)[0];
-      s.parentNode.insertBefore(t, s)
-    }(window, document, 'script',
-      'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '289205629046990');
-    fbq('track', 'PageView');
-  </script>
-  <noscript><img height="1" width="1" style="display:none"
-      src="https://www.facebook.com/tr?id=289205629046990&ev=PageView&noscript=1" /></noscript>
-  <!-- End Facebook Pixel Code -->
-
-  <!-- Pinterest Tag -->
-  <script>
-    !function (e) {
-      if (!window.pintrk) {
-        window.pintrk = function () {
-          window.pintrk.queue.push(Array.prototype.slice.call(arguments))
-        }; var
-          n = window.pintrk; n.queue = [], n.version = "3.0"; var
-            t = document.createElement("script"); t.async = !0, t.src = e; var
-              r = document.getElementsByTagName("script")[0];
-        r.parentNode.insertBefore(t, r)
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="animation/animation.css" />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2R6N6Z4DLS"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-183048817-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
       }
-    }("https://s.pinimg.com/ct/core.js");
-    pintrk('load', '2613550690495', { em: '<user_email_address>' });
-    pintrk('page');
-  </script>
-  <noscript>
-    <img height="1" width="1" style="display:none;" alt=""
-      src="https://ct.pinterest.com/v3/?event=init&tid=2613550690495&pd[em]=<hashed_email_address>&noscript=1" />
-  </noscript>
-  <!-- end Pinterest Tag -->
-</head>
+      gtag("js", new Date());
 
-<body>
-  <div class="background-image"></div>
+      gtag("config", "UA-183048817-1");
+    </script>
 
-  <header class="header">
-    <div><img src="assets/logo.svg" alt=""></div>
-    <div>
-      <h1>ÚLTIMOS DIAS PARA BAIXAR SEU E-BOOK E PLANILHA GRÁTIS</h1>
-    </div>
-    <div>
-      <span id="contador"></span>
-    </div>
-  </header>
+    <!-- hotjar -->
+    <script>
+      (function (h, o, t, j, a, r) {
+        h.hj =
+          h.hj ||
+          function () {
+            (h.hj.q = h.hj.q || []).push(arguments);
+          };
+        h._hjSettings = { hjid: 2102659, hjsv: 6 };
+        a = o.getElementsByTagName("head")[0];
+        r = o.createElement("script");
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
+    </script>
 
-  <div class="center">
-    <section class="section">
-      <div class="info">
-        <h1>Tenha controle financeiro do seu negócio na palma da sua mão.</h1>
-        <h2>Baixe nosso e-book e planilha grátis.</h2>
-        <!-- <h3>Mais de 2.800 downloads nas ultimas 48h</h3> -->
-        <!-- <img src="assets/livro.png" alt="Undraw Email"> -->
-        <ul>
-          <li class="slide-in-blurred-left">Como organizar custos?</li>
-          <li class="slide-in-blurred-left1">Como administrar as finanças e investir no seu negócio ao mesmo tempo?</li>
-          <li class="slide-in-blurred-left2">Como superar a crise?</li>
-        </ul>
+    <!-- hotjar -->
+    <script>
+      (function (h, o, t, j, a, r) {
+        h.hj =
+          h.hj ||
+          function () {
+            (h.hj.q = h.hj.q || []).push(arguments);
+          };
+        h._hjSettings = { hjid: 2102659, hjsv: 6 };
+        a = o.getElementsByTagName("head")[0];
+        r = o.createElement("script");
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
+    </script>
+    <script src="https://www.googleoptimize.com/optimize.js?id=OPT-TJPL4DL"></script>
+    <!-- Facebook Pixel Code -->
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(window, document, "script", "https://connect.facebook.net/en_US/fbevents.js");
+      fbq("init", "289205629046990");
+      fbq("track", "PageView");
+    </script>
+    <noscript><img height="1" width="1" style="display: none;" src="https://www.facebook.com/tr?id=289205629046990&ev=PageView&noscript=1" /></noscript>
+    <!-- End Facebook Pixel Code -->
+
+    <!-- Pinterest Tag -->
+    <script>
+      !(function (e) {
+        if (!window.pintrk) {
+          window.pintrk = function () {
+            window.pintrk.queue.push(Array.prototype.slice.call(arguments));
+          };
+          var n = window.pintrk;
+          (n.queue = []), (n.version = "3.0");
+          var t = document.createElement("script");
+          (t.async = !0), (t.src = e);
+          var r = document.getElementsByTagName("script")[0];
+          r.parentNode.insertBefore(t, r);
+        }
+      })("https://s.pinimg.com/ct/core.js");
+      pintrk("load", "2613550690495", { em: "<user_email_address>" });
+      pintrk("page");
+    </script>
+    <noscript>
+      <img height="1" width="1" style="display: none;" alt="" src="https://ct.pinterest.com/v3/?event=init&tid=2613550690495&pd[em]=<hashed_email_address>&noscript=1" />
+    </noscript>
+    <!-- end Pinterest Tag -->
+  </head>
+
+  <body>
+    <div class="background-image"></div>
+
+    <header class="header">
+      <div><img src="assets/logo.svg" alt="" /></div>
+      <div>
+        <h1>ÚLTIMOS DIAS PARA BAIXAR SEU E-BOOK E PLANILHA GRÁTIS</h1>
       </div>
-      <div class="negativoForm">
-        <img src="assets/top.png" alt="">
-        <div class="form">
-          <h1>Vamos lá</h1>
-          <p class="padtwo">Digite abaixo seu nome completo e email para <b>baixar grátis</b> nosso EBOOK e PLANILHA.
-          </p>
-          <form autocomplete="off" method="POST"
-            action="https://smtl.gama.academy/leads/1ccc7f60-25e3-11eb-bf8d-0d63c80760d2"
-            onsubmit="document.getElementById('link').click();document.getElementById('link2').click(); getDataBtn(); return false;">
-            <a id="link" href="file/7_Dicas_para_melhorar_suas_financas.pdf" target="_blank" download hidden></a>
-            <div>
-              <p><b class="asterisk">*</b>Nome completo:</p>
-            </div>
-            <input name="name" type="text" pattern="^\D{2,}\s[\D\s]{2,}$" title="Digite seu nome completo"
-              placeholder="Nome completo" required />
-            <div>
-              <p><b class="asterisk">*</b>E-mail:</p>
-            </div>
-            <input name="email" type="email" title="Digite um email válido" placeholder="E-mail" required />
-            <input name="redirectTo" type="hidden" value="https://bolsocheio.blog.br/thanks.html" />
-            <input type="submit" value="Pegue seu e-book e planilha" />
-          </form>
-          <h6>Mais de <b id="download">328</b> downloads nas ultimas 48h</h6>
-        </div>
+      <div>
+        <span id="contador"></span>
       </div>
+    </header>
 
-    </section>
-  </div>
-
-  <div class="lightbox" id="text">
-
-    <div class="box">
-      <!-- your title -->
-      <div class="content">
-        <div>
-          <p>Já vai?</p>
-          <p>Espera ai!</p>
+    <div class="center">
+      <section class="section">
+        <div class="info">
+          <h1>Tenha controle financeiro do seu negócio na palma da sua mão.</h1>
+          <h2>Baixe nosso e-book e planilha grátis.</h2>
+          <!-- <h3>Mais de 2.800 downloads nas ultimas 48h</h3> -->
+          <!-- <img src="assets/livro.png" alt="Undraw Email"> -->
+          <ul>
+            <li class="slide-in-blurred-left">Como organizar custos?</li>
+            <li class="slide-in-blurred-left1">Como administrar as finanças e investir no seu negócio ao mesmo tempo?</li>
+            <li class="slide-in-blurred-left2">Como superar a crise?</li>
+          </ul>
         </div>
-        <div>
-          <img src="assets/undraw_gift2.png" alt="Undraw Gift">
-        </div>
-      </div>
-      <div class="form-content">
-        <a class="close" href="#">X</a>
-        <div class="form-content2">
-          <div>
-            <p>Baixe agora nosso</p>
-            <p><b>eBOOK e planilha GRÁTIS</b></p>
-            <p>com dicas de</p>
-            <p><b>GESTÃO FINANCEIRA</b></p>
-          </div>
-          <div class="forms2">
-            <form autocomplete="off" method="POST"
+        <div class="negativoForm bounce-top">
+          <img src="assets/top.png" alt="" />
+          <div class="form">
+            <h1>Vamos lá</h1>
+            <p class="padtwo">Digite abaixo seu nome completo e email para <b>baixar grátis</b> nosso EBOOK e PLANILHA.</p>
+            <form
+              autocomplete="off"
+              method="POST"
               action="https://smtl.gama.academy/leads/1ccc7f60-25e3-11eb-bf8d-0d63c80760d2"
-              onsubmit="document.getElementById('link').click(); getDataBtn(); return false;">
+              onsubmit="document.getElementById('link').click();document.getElementById('link2').click(); getDataBtn(); return false;"
+            >
               <a id="link" href="file/7_Dicas_para_melhorar_suas_financas.pdf" target="_blank" download hidden></a>
-              <input name="name" type="text" pattern="^\D{2,}\s[\D\s]{2,}$" title="Digite seu nome completo"
-                placeholder="Nome completo" required />
+              <div>
+                <p><b class="asterisk">*</b>Nome completo:</p>
+              </div>
+              <input name="name" type="text" pattern="^\D{2,}\s[\D\s]{2,}$" title="Digite seu nome completo" placeholder="Nome completo" required />
+              <div>
+                <p><b class="asterisk">*</b>E-mail:</p>
+              </div>
               <input name="email" type="email" title="Digite um email válido" placeholder="E-mail" required />
               <input name="redirectTo" type="hidden" value="https://bolsocheio.blog.br/thanks.html" />
-              <input type="submit" value="BAIXE GRÁTIS AGORA" />
+              <input type="submit" value="Pegue seu e-book e planilha" />
             </form>
-
+            <h6>Mais de <b id="download">328</b> downloads nas ultimas 48h</h6>
           </div>
         </div>
-      </div>
+      </section>
     </div>
-  </div>
 
-  <footer>
+    <footer></footer>
+  </body>
+  <script type="text/javascript">
+    var download = 328;
 
-  </footer>
+    window.onload(atualizaDownload());
 
-</body>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script type="text/javascript">
-  var download = 328;
+    function atualizaDownload() {
+      if (download % 2 == 0) {
+        download = download + 3;
+      } else {
+        download = download + 1;
+      }
 
-  window.onload(atualizaDownload());
-
-  function atualizaDownload() {
-
-    if (download % 2 == 0) {
-      download = download + 3;
+      document.getElementById("download").innerHTML = download;
+      setTimeout(atualizaDownload, 10000);
     }
-    else {
-      download = download + 1;
+  </script>
+  <script type="text/javascript">
+    var YY = 2020;
+    var MM = 11;
+    var DD = 20;
+    var HH = 11;
+    var MI = 59;
+    var SS = 00;
+
+    window.onload(atualizaContador());
+
+    function atualizaContador() {
+      var hoje = new Date();
+      var futuro = new Date(YY, MM - 1, DD, HH, MI, SS);
+      var ss = parseInt((futuro - hoje) / 1000);
+      var mm = parseInt(ss / 60);
+      var hh = parseInt(mm / 60);
+      var dd = parseInt(hh / 24);
+      ss = ss - mm * 60;
+      mm = mm - hh * 60;
+      hh = hh - dd * 24;
+      var faltam = "";
+      faltam += dd && dd > 1 ? dd + " dias, " : dd == 1 ? "1 dia, " : "";
+      faltam += toString(hh).length ? hh + " hr, " : "";
+      faltam += toString(mm).length ? mm + " min e " : "";
+      faltam += ss + " seg";
+
+      if (dd + hh + mm + ss > 0) {
+        document.getElementById("contador").innerHTML = faltam;
+        setTimeout(atualizaContador, 1000);
+      } else {
+        document.getElementById("contador").innerHTML = "CHEGOU!!!!";
+        setTimeout(atualizaContador, 1000);
+      }
     }
-
-    document.getElementById('download').innerHTML = download;
-    setTimeout(atualizaDownload, 10000);
-
-  } 
-</script>
-<script type="text/javascript">
-  var YY = 2020;
-  var MM = 11;
-  var DD = 19;
-  var HH = 23;
-  var MI = 59;
-  var SS = 59;
-
-  window.onload(atualizaContador());
-
-  function atualizaContador() {
-    var hoje = new Date();
-    var futuro = new Date(YY, MM - 1, DD, HH, MI, SS);
-    var ss = parseInt((futuro - hoje) / 1000);
-    var mm = parseInt(ss / 60); var hh = parseInt(mm / 60);
-    var dd = parseInt(hh / 24);
-    ss = ss - (mm * 60);
-    mm = mm - (hh * 60);
-    hh = hh - (dd * 24);
-    var faltam = '';
-    faltam += (dd && dd > 1) ? dd + ' dias, ' : (dd == 1 ? '1 dia, ' : '');
-    faltam += (toString(hh).length) ? hh + ' hr, ' : '';
-    faltam += (toString(mm).length) ? mm + ' min e ' : '';
-    faltam += ss + ' seg';
-
-    if (dd + hh + mm + ss > 0) {
-      document.getElementById('contador').innerHTML = faltam;
-      setTimeout(atualizaContador, 1000);
-    }
-    else {
-      document.getElementById('contador').innerHTML = 'CHEGOU!!!!';
-      setTimeout(atualizaContador, 1000);
-    }
-  }
-</script>
-<script>
-  // Exit intent
-  function addEvent(obj, evt, fn) {
-    if (obj.addEventListener) {
-      obj.addEventListener(evt, fn, false);
-    }
-    else if (obj.attachEvent) {
-      obj.attachEvent("on" + evt, fn);
-    }
-  }
-
-  // Exit intent trigger
-  addEvent(document, 'mouseout', function (evt) {
-
-    if (evt.toElement == null && evt.relatedTarget == null) {
-      $('.lightbox').slideDown();
-    };
-
-  });
-
-  // Closing the Popup Box
-  $('a.close').click(function (evt) {
-    evt.preventDefault();
-    $('.lightbox').slideUp();
-  });
-</script>
-
+  </script>
 </html>
