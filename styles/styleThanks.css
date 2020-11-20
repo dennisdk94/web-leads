@@ -227,10 +227,6 @@ form {
   padding: 20px 0 0 0;
 }
 
-.icon img:hover {
-  /* cursor: pointer; */
-}
-
 .form h6 {
   font-family: Ubuntu;
   font-style: normal;
